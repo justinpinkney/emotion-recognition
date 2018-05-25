@@ -1,4 +1,4 @@
-function makeBarsoumNet(nClasses)
+function layers = makeBarsoumNet(nClasses)
 
     layers = [
         imageInputLayer([48, 48, 1]) ...
