@@ -1,7 +1,7 @@
 function net = main
     rng('default');
 
-    note = 'Small train barsoumnet';
+    note = 'Small train barsoumnet adam';
     logger = kifu.Logger('fer2013plus', '', true, note);
 
     dataRoot = 'data';
@@ -30,7 +30,7 @@ function net = main
 
     layers = makeBarsoumNet(imageSize, numel(unique(train.Labels)));
 
-    options = trainingOptions('sgdm', ...
+    options = trainingOptions('adam', ...
                             'ExecutionEnvironment', 'cpu', ...
                             'MiniBatchSize', 64, ...
                             'MaxEpochs', 60, ...
