@@ -1,2 +1,4 @@
 .kifu/
 data/
+models/
+*.asv
