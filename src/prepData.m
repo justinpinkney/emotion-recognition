@@ -22,7 +22,7 @@ function prepData()
         end
     end
 
-    for iRow = 1:height(labels)
+    parfor iRow = 1:height(labels)
         thisRow = labels(iRow, :);
         thisImageRow = imageTable(iRow, :);
 
